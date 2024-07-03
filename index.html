@@ -70,8 +70,8 @@
             <span class="author-block">Ru Wang*<sup style="color:#6fbf73;">1</sup>,</span>
             <span class="author-block">Kexin Song*<sup style="color:#6fbf73;">1</sup>,</span>
             <span class="author-block">Liang Ding<sup style="color:#ffac33;">2</sup>,</span>
-            <span class="author-block">Shixiang Shane Gu<sup style="color:#ed4b82;">3</sup>,</span>
-            <span class="author-block">Mingming Gong<sup style="color:#2f5ea9;">4</sup>,</span>
+            <span class="author-block">Shixiang Shane Gu<sup style="color:#6fbf73;">1</sup>,</span>
+            <span class="author-block">Mingming Gong<sup style="color:#2f5ea9;">3</sup>,</span>
             <span class="author-block">Yusuke Iwasawa<sup style="color:#6fbf73;">1</sup>,</span>
             <span class="author-block">Yutaka Matsuo<sup style="color:#6fbf73;">1</sup>,</span>
             <span class="author-block">Jiaxian Guo<sup style="color:#6fbf73;">1</sup>,</span>
@@ -79,12 +79,11 @@
           
           <br>
           
-          <!-- <div class="is-size-5 publication-authors">
+          <div class="is-size-5 publication-authors">
             <span class="author-block"><sup style="color:#6fbf73;">1</sup>The University of Tokyo,</span>
-            <span class="author-block"><sup style="color:#ffac33;">2</sup>JD Explore Academy,</span>
-            <span class="author-block"><sup style="color:#ed4b82;">3</sup>Google DeepMind,</span>
-            <span class="author-block"><sup style="color:#2f5ea9;">4</sup>The University of Melbourne,</span>
-          </div> -->
+            <span class="author-block"><sup style="color:#ffac33;">2</sup>The University of Sydney,</span>
+            <span class="author-block"><sup style="color:#2f5ea9;">3</sup>The University of Melbourne,</span>
+          </div>
 
           <br>
           <div class="is-size-5 publication-authors">
@@ -183,7 +182,7 @@
         <h2 class="title is-3">Introduction</h2>
         <div class="content has-text-justified">
           <p>
-            Multi-Modal Large Language Models (MLLMs) recently demonstrated strong capabilities in both instruction comprehension and generation, positioning them as promising tools for human-computer interaction.  However, the inherent ambiguity of language poses a challenge, potentially leading models astray in task implementation due to differing interpretations of the same text within varying contexts. In multi-modal settings, visual information serves as a natural aid in disambiguating such scenarios. In this paper, we introduce the first benchmark specifically designed to evaluate the performance of \textbf{M}LL\textbf{M}s in \textbf{A}mbiguous contexts (MMA). This benchmark employs a multiple-choice visual question-answering format and includes 261 questions with ambiguous meaning. Each question is linked to a pair of images that suggest divergent scenarios, thus leading to different answers given the same question. These questions are stratified into three categories of ambiguity: lexical, syntactic, and semantic, to facilitate a detailed examination of MLLM performance across varying levels of ambiguity. By evaluating 16 proprietary and open-sourced MLLMs, we find that: (1) When presented with two different contextual images and asked the same question, MLLMs achieved an accuracy rate of only 50.59% in answering both correctly, compared to human performance at 88.97%. This is because MLLMs often overlook scenario-specific information provided by images. (2) Among the three types of ambiguity, models perform best under lexical ambiguity and worst under syntactic ambiguity. (3) Open-sourced models generally perform significantly lower than limited-access MLLMs, with an average performance gap of 10.66%. GPT-4o emerges as the top model, achieving 70.00\% accuracy. These results indicate that current MLLMs struggle with multi-modal ambiguity.
+            Multi-Modal Large Language Models (MLLMs) recently demonstrated strong capabilities in both instruction comprehension and generation, positioning them as promising tools for human-computer interaction.  However, the inherent ambiguity of language poses a challenge, potentially leading models astray in task implementation due to differing interpretations of the same text within varying contexts. In multi-modal settings, visual information serves as a natural aid in disambiguating such scenarios. In this paper, we introduce the first benchmark specifically designed to evaluate the performance of <b>M</b>LL<b>M</b>s in <b>A</b>mbiguous contexts (MMA). This benchmark employs a multiple-choice visual question-answering format and includes 261 questions with ambiguous meaning. Each question is linked to a pair of images that suggest divergent scenarios, thus leading to different answers given the same question. These questions are stratified into three categories of ambiguity: lexical, syntactic, and semantic, to facilitate a detailed examination of MLLM performance across varying levels of ambiguity. By evaluating 16 proprietary and open-sourced MLLMs, we find that: (1) When presented with two different contextual images and asked the same question, MLLMs achieved an accuracy rate of only 50.59% in answering both correctly, compared to human performance at 88.97%. This is because MLLMs often overlook scenario-specific information provided by images. (2) Among the three types of ambiguity, models perform best under lexical ambiguity and worst under syntactic ambiguity. (3) Open-sourced models generally perform significantly lower than limited-access MLLMs, with an average performance gap of 10.66%. GPT-4o emerges as the top model, achieving 70.00\% accuracy. These results indicate that current MLLMs struggle with multi-modal ambiguity.
           </p>
         </div>
       </div>
@@ -347,6 +346,21 @@
                 <td class="js-sort-number"><strong>Overall (522)</strong></td>
             </tr>
             <!-- Proprietary MLLMs -->
+            <tr style="background-color: rgba(255, 208, 80, 0.15);">
+              <td>Human Best</td>
+              <td>0.933</td>
+              <td>0.966</td>
+              <td>1.000</td>
+              <td>1.000</td>
+              <td>0.864</td>
+              <td>1.000</td>
+              <td>0.833</td>
+              <td>1.000</td>
+              <td>0.965</td>
+              <td>0.929</td>
+              <td>0.857</td>
+              <td>0.927</td>
+            </tr>
             <tr style="background-color: rgba(255, 208, 80, 0.15);">
               <td>Human Average</td>
               <td>0.827</td>
